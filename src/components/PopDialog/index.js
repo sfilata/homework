@@ -44,8 +44,8 @@ class PopDialog extends BaseClass {
             value={this.state.resources}
             onChange={this.onChange}
             ></Input>
-          <Button className="btn btn-add" onClick={this.handleConfirm}>Add Resources</Button>
-          <Button className="btn btn-cancel" onClick={this.handleCancel}>Cancel</Button>
+          <Button type="primary" className="btn btn-add" onClick={this.handleConfirm}>Add Resources</Button>
+          <Button type="minor" className="btn btn-cancel" onClick={this.handleCancel}>Cancel</Button>
         </div>
       </>
     );

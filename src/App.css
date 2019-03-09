@@ -37,4 +37,15 @@
   background: #fff;
 }
 
+.ant-btn-primary {
+  background: #00abc8;
+  border-color: #00abc8;
+}
+
+.ant-btn-minor {
+  background: #2d4054;
+  border-color: #2d4054;
+  color: #fff;
+}
+
 

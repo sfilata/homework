@@ -103,6 +103,7 @@ class MainContent extends BaseClass {
     let agentObj = this.state.agentList[index];
     value.split(',').map(item => {
       agentObj.resources.push(item);
+      return 0;
     });
     console.log(agentObj);
     this.handleAddCancel();
