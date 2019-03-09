@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import {LocaleProvider} from "antd";
+import zh_CN from "antd/lib/locale-provider/zh_CN";
+import BasicLayout from "./layouts/BasicLayout";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <LocaleProvider locale={zh_CN}>
+          <BasicLayout />
+        </LocaleProvider>
       </div>
     );
   }

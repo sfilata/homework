@@ -1,0 +1,174 @@
+.status-container {
+  height: 120px;
+  position: relative;
+}
+
+.building-container {
+  background: #ff9a2a;
+}
+
+.idle-container {
+  background: #7fbc39;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+.data {
+  font-size: 48px;
+  color: white;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.back-icon {
+  font-size: 144px;
+  color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: -18px;
+  left: 32%;
+}
+
+.number-container .title {
+  font-size: 12px;
+  color: #2d4054;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.number-container .data {
+  font-size: 24px;
+  color: #2d4054;
+  text-align: center;
+  padding: 15px 0 0 0;
+}
+
+.toolbar {
+  margin-top: 20px;
+  height: 50px;
+}
+
+.filter {
+  border-right: 1px solid #edeced;
+  width: 90px;
+  height: 50px;
+  float: left;
+  line-height: 50px;
+}
+
+.filter:hover {
+  color: #0084cf;
+  border-bottom: 3px solid #0084cf;
+}
+
+.searchbar {
+  width: 180px;
+  float: left;
+  line-height: 50px;
+  margin-left: 30px;
+}
+
+.btnFilter {
+  font-size: 20px;
+  line-height: 50px;
+  float: right;
+  cursor: pointer;
+}
+
+.btnFilter:hover {
+  color: #00abc8;
+}
+
+.agent-item {
+  margin-top: 20px;
+  height: 120px;
+  padding: 20px;
+}
+
+.agent-item img {
+  line-height: 100px;
+  float: left;
+  margin-right: 30px;
+}
+
+.title-container {
+  height: 50px;
+}
+
+.title-container .icon {
+  float: left;
+  font-size: 20px;
+  margin-right: .5em;
+}
+
+.title-container div {
+  float: left;
+}
+
+.title-container .agent-title {
+  font-weight: bold;
+  color: #00abc8;
+}
+
+.title-container .tag {
+  background: #7fbc39;
+  color: #fff;
+  margin: 0 2em;
+  padding: 0 .5em;
+}
+
+.title-container .basic-data {
+  margin-left: 2em;
+}
+
+.btn-group {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.btn-group div {
+  display: inline-block;
+  text-align: left;
+}
+
+.btn-group .btn-add {
+  box-sizing: border-box;
+  background: #00abc8;
+  color: #fff;
+  font-weight: bolder;
+  text-align: center;
+  width: 21px;
+  height: 21px;
+}
+
+.btn-group .icon {
+  margin-right: 0;
+}
+
+.btn-group .tag-item {
+  margin-left: .5em;
+  background: #efefef;
+  color: #000;
+  text-align: center;
+  padding: 0 .5em;
+}
+
+.btn-group .tag-item .icon {
+  margin-left: .5em;
+}
+
+.btn-group .btn-deny {
+  background: #00abc8;
+  color: #fff;
+  padding: .2em 1em;
+  float: right;
+}
+
+.btn-group .btn-deny .icon {
+  margin-right: .5em;
+}
