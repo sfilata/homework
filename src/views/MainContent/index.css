@@ -1,6 +1,7 @@
 .status-container {
   height: 120px;
   position: relative;
+  overflow: hidden;
 }
 
 .building-container {
@@ -34,6 +35,20 @@
   left: 32%;
 }
 
+.icon-cog {
+  animation: cog-spin infinite 2s linear;
+  pointer-events: none;
+}
+
+@keyframes cog-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .number-container .title {
   font-size: 12px;
   color: #2d4054;
@@ -59,9 +74,10 @@
   height: 50px;
   float: left;
   line-height: 50px;
+  cursor: pointer;
 }
 
-.filter:hover {
+.active {
   color: #0084cf;
   border-bottom: 3px solid #0084cf;
 }
@@ -122,6 +138,10 @@
   padding: 0 .5em;
 }
 
+.title-container .working {
+  background: #ff9a2a;
+}
+
 .title-container .basic-data {
   margin-left: 2em;
 }
@@ -144,6 +164,7 @@
   text-align: center;
   width: 21px;
   height: 21px;
+  cursor: pointer;
 }
 
 .btn-group .icon {
@@ -160,6 +181,7 @@
 
 .btn-group .tag-item .icon {
   margin-left: .5em;
+  cursor: pointer;
 }
 
 .btn-group .btn-deny {
@@ -167,6 +189,7 @@
   color: #fff;
   padding: .2em 1em;
   float: right;
+  cursor: pointer;
 }
 
 .btn-group .btn-deny .icon {
