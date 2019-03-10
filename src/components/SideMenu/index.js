@@ -1,3 +1,8 @@
+/**
+ * 侧边栏
+ * author: shubaiqiao
+ * date: 2019.3.9
+ */
 import React from 'react';
 import { Menu, Layout } from 'antd';
 

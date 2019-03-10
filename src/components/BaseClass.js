@@ -1,11 +1,12 @@
+/**
+ * 基础类
+ * author: shubaiqiao
+ * 便于实现api访问
+ * date: 2019.3.9
+ */
 import React from 'react';
 import api from '../api';
 
-/**
- * 基础类
- * author: shubaiqiao@126.com
- * 便于实现api访问
- */
 export default class BaseClass extends React.Component {
   constructor(props) {
     super(props);

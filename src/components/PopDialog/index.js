@@ -1,3 +1,8 @@
+/**
+ * 弹出窗口（规定实现组件）
+ * author: shubaiqiao
+ * date: 2019.3.9
+ */
 import React from 'react';
 import { Input, Button } from 'antd';
 import BaseClass from '../../components/BaseClass';

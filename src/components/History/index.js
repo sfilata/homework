@@ -1,3 +1,8 @@
+/**
+ * 侧边栏历史记录
+ * author: shubaiqiao
+ * date: 2019.3.8
+ */
 import React from 'react';
 import './index.css';
 

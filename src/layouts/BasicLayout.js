@@ -2,6 +2,11 @@ import React from 'react';
 import { Layout, Avatar, Menu, Dropdown } from 'antd';
 import cruise from '../assets/logo/logo.svg';
 
+/**
+ * 主要布局
+ * author: shubaiqiao
+ * date: 2019.3.8
+ */
 import SideMenu from '../components/SideMenu';
 import MainContent from '../views/MainContent';
 

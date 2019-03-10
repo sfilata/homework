@@ -1,3 +1,8 @@
+/**
+ * 主内容框
+ * author: shubaiqiao
+ * date: 2019.3.8
+ */
 import React from 'react';
 import { Row, Col, Input, Popconfirm, message } from 'antd';
 import BaseClass from "../../components/BaseClass";
