@@ -102,7 +102,6 @@
 
 .agent-item {
   margin-top: 20px;
-  height: 120px;
   padding: 20px;
 }
 
@@ -156,6 +155,12 @@
   text-align: left;
 }
 
+.btn-group .tagList-container {
+  max-width: 75%;
+  overflow-x: scroll;
+  vertical-align: top;
+}
+
 .btn-group .btn-add {
   box-sizing: border-box;
   background: #00abc8;
@@ -177,6 +182,7 @@
   color: #000;
   text-align: center;
   padding: 0 .5em;
+  margin-bottom: .5em;
 }
 
 .btn-group .tag-item .icon {

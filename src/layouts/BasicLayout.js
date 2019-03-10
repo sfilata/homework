@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout, Avatar } from 'antd';
+import { Layout, Avatar, Menu, Dropdown } from 'antd';
 import cruise from '../assets/logo/logo.svg';
 
 import SideMenu from '../components/SideMenu';
@@ -7,17 +7,32 @@ import MainContent from '../views/MainContent';
 
 const { Header, Footer, Content } = Layout;
 
+const menu = (
+  <Menu>
+    <Menu.Item key="0">
+      <i className="icon icon-sign-in"></i>
+      <span>Profile</span>
+    </Menu.Item>
+    <Menu.Item key="1">
+      <i className="icon icon-id-card" style={{marginRight: '10px'}}></i>
+      <span>Sign Out</span>
+    </Menu.Item>
+  </Menu>
+)
+
 const BasicLayout = () => (
   <>
     <Layout>
       <Header className="header">
         <img className="logo" src={cruise} alt="logo" />
-        <div style={{float: 'right', marginRight: '0px'}}>
-          <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-          <div style={{display: 'inline-block', position: 'relative', top: '4px', left: '2px'}}>
-            <i style={{fontSize: '20px', color: '#afafaf', verticalAlign: 'text-bottom'}} className="icon icon-angle-down"></i> 
+        <Dropdown overlay={menu} trigger={['click']}>
+          <div style={{float: 'right', marginRight: '0px'}}>
+            <Avatar style={{textAlign: 'center'}} src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" size={40} />
+            <div style={{display: 'inline-block', position: 'relative', top: '4px', left: '2px'}}>
+              <i style={{fontSize: '20px', color: '#afafaf', verticalAlign: 'text-bottom'}} className="icon icon-angle-down"></i> 
+            </div>
           </div>
-        </div>
+        </Dropdown>
       </Header>
       <Layout>
         <SideMenu></SideMenu>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Input, Popconfirm } from 'antd';
+import { Row, Col, Input, Popconfirm, message } from 'antd';
 import BaseClass from "../../components/BaseClass";
 import PopDialog from "../../components/PopDialog";
 import './index.css';
@@ -66,11 +66,13 @@ class MainContent extends BaseClass {
 
   handleDelete = (id, resourceIndex, agentIndex) => {
     // 删除第agentIndex个agent中的第resourceIndex个资源，agent的id为id
-    console.log(id, resourceIndex, agentIndex);
+    // console.log(id, resourceIndex, agentIndex);
     let agentObj = this.state.agentList[agentIndex];
     agentObj.resources.splice(resourceIndex, 1);
-    let agentList = this.state.agentList;
-    this.setState({agentList: agentList});
+    this.$api.agent.updateAgent(id, agentObj).then(res => {
+      message.success('Deleted successfully!');
+      this.fetchList();
+    });
   }
 
   handleFilter = e => {
@@ -105,8 +107,11 @@ class MainContent extends BaseClass {
       agentObj.resources.push(item);
       return 0;
     });
-    console.log(agentObj);
-    this.handleAddCancel();
+    this.$api.agent.updateAgent(id, agentObj).then(res => {
+      message.success('The specified resource has already been added');
+      this.handleAddCancel();
+      this.fetchList();
+    });
   }
 
   handleAddCancel = () => {
@@ -145,7 +150,9 @@ class MainContent extends BaseClass {
           </div>
           <div className="btn-group">
             <div className="btn-add" onClick={this.handleAddResrouce.bind(this, index, id)}><i className="icon icon-plus"></i></div>
-            {tagList}
+            <div className="tagList-container">
+              {tagList}
+            </div>
             <div className="btn-deny">
               <i className="icon icon-deny"></i>
               Deny

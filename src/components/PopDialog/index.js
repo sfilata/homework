@@ -18,6 +18,7 @@ class PopDialog extends BaseClass {
   }
 
   handleCancel = () => {
+    this.setState({resources: ''});
     this.props.handleCancel();
   }
 

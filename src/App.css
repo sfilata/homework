@@ -42,10 +42,24 @@
   border-color: #00abc8;
 }
 
+.ant-btn-primary:hover {
+  background: #00abc8;
+  border-color: #00abc8;
+}
+
 .ant-btn-minor {
   background: #2d4054;
   border-color: #2d4054;
   color: #fff;
 }
 
+.ant-btn-minor:hover {
+  background: #2d4054;
+  border-color: #2d4054;
+  color: #fff;
+}
+
+.ant-dropdown-menu-item:hover {
+  background: #efefef;
+}
 
